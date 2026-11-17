@@ -1,0 +1,25 @@
+[project]
+name = "keno-nc"
+version = "1.0.0"
+description = "Keno NC mobil – Norbi & Claude"
+dependencies = [
+  "flet==1.1.2",
+  "flet-permission-handler==1.1.2",
+  "openpyxl",
+  "certifi",
+]
+
+[tool.flet]
+org = "hu.norbi"
+bundle_id = "hu.norbi.kenonc"
+product = "Keno NC"
+company = "Norbi"
+copyright = "Norbi & Claude"
+
+[tool.flet.app]
+path = "src"
+
+[tool.flet.android.permission]
+"android.permission.MANAGE_EXTERNAL_STORAGE" = true
+"android.permission.READ_EXTERNAL_STORAGE" = true
+"android.permission.WRITE_EXTERNAL_STORAGE" = true
